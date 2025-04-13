@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base styles */
+body {
+    background-image: url(img/favlincvue.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: "Noto Serif", serif;
+}
+
+.shadows-font {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #f59351;
+}
+
+/* Prevent scrolling */
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.top-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.name {
+    font-size: 2.3rem;
+    color: #011E31;
+}
+
+.top-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: #f59351;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Bio Section */
+.bio {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    height: 500px;
+    max-width: 1200px; /* Increased max width */;
+    display: flex; /* Ensures a two-column layout */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bio p {
+  font-size: clamp(1rem, 2vw, 1.8rem); /* Min 1rem, scales with screen size, max 1.8rem */
+  line-height: 1; /* Improve readability */;
+}
+
+/* Profile Image Column */
+.bio .profile-image {
+    flex: 1; /* Takes up half the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+  width: 100%; /* Make it fill the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 450px; /* Prevent it from getting too large */
+  object-fit: cover; /* Ensure it crops to fit if needed */
+}
+
+/* Bio Text Column */
+.bio .bio-text {
+    flex: 2; /* Takes up the other half */
+    padding-left: 40px; /* Space between image and text */
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: "IBM Plex Sans", serif;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+  .bio {
+      flex-direction: column; /* Stack the image above the text */
+      height: auto; /* Allow height to adjust dynamically */
+      text-align: center; /* Center text for better readability */
+  }
+
+  .bio .profile-image {
+      margin-bottom: 20px; /* Add spacing between image and text */
+  }
+
+  .bio .bio-text {
+      padding-left: 0; /* Remove the left padding for better alignment */
+  }
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Style for the header container */
+.top-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    z-index: 10;
+  }
+  
+  /* Style for the name on the left */
+  .name {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.3rem;
+    font-weight: italic;
+    color: #011E31;
+  }
+  
+  /* Style for the navigation container */
+  .top-nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Style for navigation links */
+  .top-nav a {
+    color: #011E31;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.8rem;
+  }
+  
+  .top-nav a:hover {
+    text-decoration: underline;
+  }
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8db8c4;
+}
+
+main {
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+        border-radius: 10px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.blog-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.blog-card-image {
+    width: 100%; /* Make sure it fills the container */
+    height: 200px; /* Set a fixed height for consistency */
+    overflow: hidden; /* Ensures images don’t overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.blog-card-image img {
+    width: 100%; /* Make all images fill the container width */
+    height: 100%; /* Force all images to fit the height */
+    object-fit: cover; /* Crop images to maintain a uniform look */
+}
+
+.blog-card-image svg {
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+}
+
+.blog-card h3 {;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.blog-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: px;
+    border: 1px solid #ccc;
+}
+
+.read-more {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .search-filters {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
