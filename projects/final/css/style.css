@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* Header */
+header {
+    background: url('../img/campus_map_header_pin.png') no-repeat center center/cover;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text {
+    /* Positioning the text absolutely to center it within the header */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.904); /* Semi-transparent background with 80% opacity */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: Rounded corners */
+    color: #000; /* Ensure text is readable */
+}
+
+/* Typography */
+h1 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3em;
+    margin-bottom: 0em;
+    font-weight: normal;
+    color: #E61610;
+}
+
+h2 {
+    font-family: "Abel", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0em;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: "Abel", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+a {
+    color: #E61610;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Body */
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", serif;
+}
+
+/* Footer */
+footer {
+    background-color: #030d1c;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 10px;
+    text-align: center;
+}
