@@ -1,2 +1,2 @@
 # aprilqueved0.github.io
-Portfolio of work. Photos, news application development pges TK.
+Portfolio of work. Photo gallery, news application development pages TK.
