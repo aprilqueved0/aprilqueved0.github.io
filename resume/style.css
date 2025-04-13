@@ -31,7 +31,7 @@ body {
   .name {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.3rem;
-    font-weight: italic;
+    font-weight: 500;
     color: #011E31;
   }
   
