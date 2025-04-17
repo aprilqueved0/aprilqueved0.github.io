@@ -85,12 +85,12 @@ body {
     border-radius: 8px;
 }
 
-.skills, .education, .awards, .leadership ul {
+.skills ul {
     list-style: none;
     padding: 10px 0;
 }
 
-.skills, .education, .awards, .leadership li {
+.skills li {
     padding: 5px 0;
 }
 
