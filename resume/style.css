@@ -78,8 +78,8 @@ body {
     border-right: 2px solid #ddd;
 }
 
-/* Skills & Education */
-.skills, .education {
+/* Skills & Education & Awards and Leadership */
+.skills, .education, .awards {
     background: #f8f8f8;
     padding: 15px;
     border-radius: 8px;
