@@ -79,18 +79,18 @@ body {
 }
 
 /* Skills & Education */
-.skills, .education {
+.skills, .education, .awards {
     background: #f8f8f8;
     padding: 15px;
     border-radius: 8px;
 }
 
-.skills, .education, .awards ul {
+.skills, .education ul {
     list-style: none;
     padding: 10px 0;
 }
 
-.skills, .education, .awards li {
+.skills, .education li {
     padding: 5px 0;
 }
 
